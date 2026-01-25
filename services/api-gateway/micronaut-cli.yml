@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: huragan11
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [app-name, data, data-jpa, gradle, http-client, http-server-jdk, java, java-application, jdbc-hikari, jul-to-slf4j, junit, logback, management, micrometer, micrometer-prometheus, micronaut-aot, micronaut-build, micronaut-http-validation, openapi, openapi-adoc, openapi-explorer, postgres, properties, readme, security-annotations, security-jwt, serialization-jackson, shade, static-resources, swagger-ui, testcontainers, validation]

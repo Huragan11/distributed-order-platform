@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: huragan11
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [app-name, gradle, http-client-test, java, java-application, jmx, jul-to-slf4j, junit, kafka, kafka-streams, logback, management, micrometer, micrometer-prometheus, micronaut-aot, micronaut-build, micronaut-http-validation, mongo-reactive, mongo-sync, netty-server, properties, rabbitmq, readme, serialization-jackson, shade, static-resources, testcontainers]

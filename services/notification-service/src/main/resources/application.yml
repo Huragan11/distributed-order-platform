@@ -1,0 +1,17 @@
+#Mon Nov 17 09:45:48 UTC 2025
+micronaut:
+  application:
+    name: notification-service
+  metrics:
+    enabled: true
+    export:
+      prometheus:
+        enabled: true
+        step: PT1M
+        descriptions: true
+
+rabbitmq:
+  uri: amqp://localhost:5672
+
+
+

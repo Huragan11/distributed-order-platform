@@ -1,0 +1,29 @@
+#Mon Nov 17 09:18:47 UTC 2025
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+    enabled: false
+micronaut:
+  application:
+    name: order-service
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+        step: PT1M
+        descriptions: true
+datasources:
+  default:
+    enabled: false
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+    url: ${DB_URL:`jdbc:postgresql://localhost:5432/postgres`}
+    driver-class-name: org.postgresql.Driver
+    db-type: postgres
+    dialect: POSTGRES
+grpc:
+  server:
+    port: 50051

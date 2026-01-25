@@ -1,0 +1,13 @@
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  script:
+    - ./gradlew test
+
+build:
+  stage: build
+  script:
+    - ./gradlew build

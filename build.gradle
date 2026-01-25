@@ -1,0 +1,18 @@
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    group = 'huragan11'
+
+    plugins.withId('java') {
+        java {
+            sourceCompatibility = JavaVersion.VERSION_21
+            targetCompatibility = JavaVersion.VERSION_21
+        }
+        dependencies {
+            runtimeOnly("org.yaml:snakeyaml")
+        }
+    }
+}
+

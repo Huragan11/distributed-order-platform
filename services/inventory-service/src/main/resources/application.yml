@@ -1,0 +1,16 @@
+#Mon Nov 17 09:28:45 UTC 2025
+micronaut:
+  application:
+    name: inventory-service
+  metrics:
+    enabled: true
+    export:
+      prometheus:
+        enabled: true
+        step: PT1M
+        descriptions: true
+redis:
+  uri: redis://localhost
+grpc:
+  server:
+    port: 50051

@@ -1,0 +1,7 @@
+rootProject.name = 'distributed-order-platform'
+
+include 'services:api-gateway',
+        'services:order-service',
+        'services:inventory-service',
+        'services:notification-service'
+
