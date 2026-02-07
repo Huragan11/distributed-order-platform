@@ -1,4 +1,4 @@
-package huragan11;
+package com.huragan11;
 
 import org.slf4j.bridge.SLF4JBridgeHandler;
 import io.micronaut.runtime.Micronaut;

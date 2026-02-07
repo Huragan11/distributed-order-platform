@@ -2,6 +2,7 @@ plugins {
     id("io.micronaut.application") version "4.6.1"
     id("com.gradleup.shadow") version "8.3.9"
     id("io.micronaut.aot") version "4.6.1"
+    id("com.google.protobuf") version "0.9.4"
 }
 
 version = "0.1"
@@ -31,11 +32,14 @@ dependencies {
 
     compileOnly("io.micronaut:micronaut-http-client")
 
-    implementation("io.micronaut.grpc:micronaut-grpc-server-runtime:4.6.0")
+    implementation("io.micronaut.grpc:micronaut-grpc-server-runtime")
 
+    implementation("com.google.protobuf:protobuf-java")
     implementation("io.grpc:grpc-protobuf")
     implementation("io.grpc:grpc-stub")
     implementation("io.grpc:grpc-netty-shaded")
+
+    implementation("javax.annotation:javax.annotation-api")
 
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("org.yaml:snakeyaml")
@@ -49,8 +53,34 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
+sourceSets {
+    main {
+        proto {
+            srcDir "../../proto"
+        }
+    }
+}
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:3.25.3"
+    }
+    plugins {
+        grpc {
+            artifact = "io.grpc:protoc-gen-grpc-java:1.63.0"
+        }
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.plugins {
+                grpc {}
+            }
+        }
+    }
+}
+
 application {
-    mainClass = "huragan11.Application"
+    mainClass = "com.huragan11.Application"
 }
 
 java {

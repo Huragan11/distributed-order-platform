@@ -1,4 +1,4 @@
-package huragan11;
+package com.huragan11;
 
 import io.micronaut.configuration.kafka.annotation.KafkaListener;
 import io.micronaut.configuration.kafka.annotation.Topic;

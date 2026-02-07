@@ -1,4 +1,4 @@
-package huragan11;
+package com.huragan11;
 
 import io.micronaut.configuration.kafka.streams.ConfiguredStreamBuilder;
 import io.micronaut.context.annotation.Factory;

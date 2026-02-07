@@ -13,4 +13,4 @@ redis:
   uri: redis://localhost
 grpc:
   server:
-    port: 50051
+    port: 50052
