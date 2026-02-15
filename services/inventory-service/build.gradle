@@ -26,7 +26,7 @@ dependencies {
     implementation("io.micronaut.micrometer:micronaut-micrometer-registry-prometheus")
     implementation("io.micronaut.mongodb:micronaut-mongo-reactive")
     implementation("io.micronaut.mongodb:micronaut-mongo-sync")
-    implementation("io.micronaut.redis:micronaut-redis-lettuce")
+    //implementation("io.micronaut.redis:micronaut-redis-lettuce")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("org.slf4j:jul-to-slf4j")
 
