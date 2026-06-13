@@ -1,0 +1,6 @@
+plugins {
+    id 'java-library'
+}
+
+version = "0.1"
+group = "huragan11"

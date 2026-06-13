@@ -3,9 +3,10 @@ jpa:
   default:
     properties:
       hibernate:
+        format_sql: true
+        show_sql: true
         hbm2ddl:
           auto: update
-    enabled: false
 micronaut:
   server:
     port: 8081
@@ -19,10 +20,9 @@ micronaut:
         descriptions: true
 datasources:
   default:
-    enabled: false
     username: ${DB_USER:postgres}
     password: ${DB_PASSWORD:postgres}
-    url: ${DB_URL:`jdbc:postgresql://localhost:5432/postgres`}
+    url: ${DB_URL:`jdbc:postgresql://localhost:5432/orders`}
     driver-class-name: org.postgresql.Driver
     db-type: postgres
     dialect: POSTGRES
