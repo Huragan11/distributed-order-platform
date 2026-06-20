@@ -57,7 +57,7 @@ dependencies {
 }
 
 application {
-    mainClass = "huragan11.Application"
+    mainClass = "huragan11.OrderServiceApplication"
 }
 
 java {
