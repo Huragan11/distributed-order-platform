@@ -1,0 +1,11 @@
+# Normalize line endings of text files to LF in the repository
+* text=auto
+
+# Unix start script must keep LF, otherwise it breaks in Linux CI and Docker
+/gradlew text eol=lf
+
+# Windows scripts need CRLF
+*.bat text eol=crlf
+
+# Binary files must never be touched
+*.jar binary
