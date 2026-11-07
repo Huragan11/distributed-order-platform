@@ -12,3 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+include("services:order-service")
