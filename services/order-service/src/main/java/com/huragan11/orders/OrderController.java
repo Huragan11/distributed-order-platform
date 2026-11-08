@@ -5,6 +5,7 @@ import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Post;
+import jakarta.validation.Valid;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -19,7 +20,7 @@ public class OrderController {
     }
 
     @Post
-    public HttpResponse<Order> create(@Body CreateOrderRequest request) {
+    public HttpResponse<Order> create(@Valid @Body CreateOrderRequest request) {
         return HttpResponse.created(orderService.create(request));
     }
 

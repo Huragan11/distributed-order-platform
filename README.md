@@ -11,7 +11,7 @@ JUnit 5 + Testcontainers, Prometheus / Grafana / OpenSearch, Docker, Kubernetes,
 
 - [x] 0. Gradle multi-project skeleton
 - [x] 1. `order-service`: first Micronaut endpoint
-- [ ] 2. Tests: JUnit 5 + Micronaut Test
+- [x] 2. Tests: JUnit 5 + Micronaut Test
 - [ ] 3. PostgreSQL + Micronaut Data + Flyway + Testcontainers
 - [ ] 4. `inventory-service` + gRPC
 - [ ] 5. Kafka events (outbox), RabbitMQ comparison
