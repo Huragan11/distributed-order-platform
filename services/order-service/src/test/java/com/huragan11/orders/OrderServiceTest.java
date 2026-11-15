@@ -3,8 +3,6 @@ package com.huragan11.orders;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.UUID;
-
 class OrderServiceTest {
 
     private final OrderService orderService = new OrderService();
